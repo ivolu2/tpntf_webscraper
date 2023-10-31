@@ -8,7 +8,7 @@ List<string> urls = new List<string>();
 string fileName = "urls.txt";
 int BufferSize = 128;
 
-//Open txt file with  team IDs and parse it line by line
+//Open txt file with URLs and parse it line by line
 using (var fileStream = File.OpenRead(fileName))
 using (var streamReader = new StreamReader(fileStream, Encoding.UTF8, true, BufferSize))
 {
@@ -87,6 +87,8 @@ foreach(string url in urls){
     double avg_price = 0;
 
     foreach (string value in prices){
+
+        //Invalid Price String Format Detection
         if(value.Substring(0,1) == "$"){
             avg_price += double.Parse(value.Substring(1,value.Length-1));
         }
