@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ivolu2/Projects/tpntf_webscraper/tpntf_webscraper.csproj": {}
+  },
+  "projects": {
+    "/Users/ivolu2/Projects/tpntf_webscraper/tpntf_webscraper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivolu2/Projects/tpntf_webscraper/tpntf_webscraper.csproj",
+        "projectName": "tpntf_webscraper",
+        "projectPath": "/Users/ivolu2/Projects/tpntf_webscraper/tpntf_webscraper.csproj",
+        "packagesPath": "/Users/ivolu2/.nuget/packages/",
+        "outputPath": "/Users/ivolu2/Projects/tpntf_webscraper/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivolu2/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "HtmlAgilityPack.CssSelectors": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "restsharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
