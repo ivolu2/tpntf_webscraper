@@ -87,7 +87,12 @@ foreach(string url in urls){
     double avg_price = 0;
 
     foreach (string value in prices){
-        avg_price += double.Parse(value.Substring(1,value.Length-1));
+        if(value.Substring(0,1) == "$"){
+            avg_price += double.Parse(value.Substring(1,value.Length-1));
+        }
+        else{
+            Console.WriteLine(value);
+        }
     }
 
     avg_price /= prices.Count();
